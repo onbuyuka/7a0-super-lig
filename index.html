@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7A0 · Süper Lig — Build · Simulate · 7–0</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+    <meta name="description" content="Roll Süper Lig clubs across the years and take one player from each to build your dream XI, then simulate a 7-game run from the group to the final — game by game. Can your team go 7–0?" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Oswald', 'Inter', 'sans-serif'],
+              score: ['"Libre Caslon Display"', 'Georgia', 'serif'],
+            },
+            colors: {
+              cream: {
+                50: '#faf8f2',
+                100: '#f5f1e8',
+                200: '#ece4d4',
+                300: '#ddd2bb',
+              },
+              pitch: {
+                400: '#3f9d63',
+                500: '#2f7d4f',
+                600: '#26683f',
+                700: '#1f5132',
+                800: '#173d27',
+                900: '#0f2a1a',
+              },
+              ink: {
+                700: '#2a2620',
+                800: '#211d16',
+                900: '#15130f',
+              },
+              flag: {
+                red: '#e30a17',
+                dark: '#c70000',
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.4s ease-out',
+              'fade-in-up': 'fadeInUp 0.45s ease-out',
+              'pop': 'pop 0.35s cubic-bezier(0.2, 0.8, 0.2, 1)',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(12px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              pop: {
+                '0%': { transform: 'scale(0.92)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body { background-color: #f5f1e8; }
+    </style>
+    <script type="module" crossorigin src="/7a0-super-lig/assets/index-DzNj1cRa.js"></script>
+  </head>
+  <body class="font-sans text-ink-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>
