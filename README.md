@@ -63,6 +63,14 @@ so it stays playable. Positions are mapped to our set (e.g. `CDM→DM`, `CF→ST
 club isn't one of the modelled 16 are skipped. An independent fan project — data is used for a
 non-commercial game.
 
+## Dependency maintenance
+
+[Dependabot](.github/dependabot.yml) checks npm dependencies and GitHub Actions
+weekly. Minor and patch npm version updates are grouped; major updates stay
+separate. Security updates run independently when GitHub detects a vulnerable
+dependency. Run the existing type-check, tests and production build before
+accepting updates. Site deployment remains a separate `npm run deploy` step.
+
 ## Concept (from 7a0)
 
 | 7a0 (original)                              | 7A0 · Süper Lig (this project)                       |
@@ -80,4 +88,3 @@ non-commercial game.
   final (91). Top two of the group advance; level knockouts go to penalties.
 - **7–0** = win all seven. *Record crusher* (goal-difference ≥ 18) and *The wall* (no goals
   conceded) are bonus badges.
-
