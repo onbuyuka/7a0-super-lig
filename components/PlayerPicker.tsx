@@ -77,7 +77,7 @@ export const PlayerPicker: React.FC = () => {
                 onClick={() => selectDraftPlayer(p.id)}
                 className={[
                   'w-full flex items-center gap-3 px-4 py-2 text-left transition-colors',
-                  selected ? 'bg-flag-red/10 ring-1 ring-inset ring-flag-red/40' : 'hover:bg-ink-900/[0.04]',
+                  selected ? 'bg-flag-red/10 ring-1 ring-inset ring-flag-red/40' : 'hover:bg-ink-900/4',
                   placeable ? '' : 'opacity-40 cursor-not-allowed',
                 ].join(' ')}
               >

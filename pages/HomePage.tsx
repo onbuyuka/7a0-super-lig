@@ -26,7 +26,7 @@ export const HomePage: React.FC = () => {
         <div className="font-display uppercase tracking-[0.18em] text-xs text-ink-700/60 mb-3">
           Dream Süper Lig XI · {minYear} — {maxYear}
         </div>
-        <h1 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95] text-ink-900 max-w-2xl">
+        <h1 className="font-display uppercase text-4xl sm:text-6xl leading-[0.95] sm:leading-none text-ink-900 max-w-2xl">
           Roll the dice. Build your dream <span className="text-flag-red">Super Lig XI</span>.
         </h1>
         <p className="mt-5 max-w-xl text-ink-700">

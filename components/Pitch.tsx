@@ -24,12 +24,12 @@ const PitchMarkings: React.FC = () => (
 
 const FilledChip: React.FC<{ player: Player; showRating: boolean }> = ({ player, showRating }) => (
   <div className="flex flex-col items-center gap-1">
-    <div className="w-10 h-10 rounded-full bg-cream-50 grid place-items-center shadow ring-2 ring-cream-50/70 transition-all hover:ring-flag-red">
+    <div className="w-10 h-10 rounded-full bg-cream-50 grid place-items-center shadow-sm ring-2 ring-cream-50/70 transition-all hover:ring-flag-red">
       <span className="font-score font-bold text-ink-900 text-lg leading-none">
         {showRating ? player.rating : `#${player.number ?? ''}`}
       </span>
     </div>
-    <span className="max-w-[84px] truncate rounded bg-ink-900/65 px-1.5 py-0.5 text-[10px] font-semibold text-cream-50">
+    <span className="max-w-[84px] truncate rounded-sm bg-ink-900/65 px-1.5 py-0.5 text-[10px] font-semibold text-cream-50">
       {player.name}
     </span>
   </div>
@@ -66,7 +66,7 @@ export const Pitch: React.FC = () => {
 
   return (
     <div
-      className="relative mx-auto w-full overflow-hidden rounded-xl bg-gradient-to-b from-pitch-600 to-pitch-800 shadow-inner ring-1 ring-ink-900/20"
+      className="relative mx-auto w-full overflow-hidden rounded-xl bg-linear-to-b from-pitch-600 to-pitch-800 shadow-inner ring-1 ring-ink-900/20"
       style={{ aspectRatio: '3 / 4', maxWidth: 460 }}
     >
       <PitchMarkings />

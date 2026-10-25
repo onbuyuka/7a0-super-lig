@@ -5,7 +5,7 @@ import { Brand } from './Brand';
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col bg-cream-100">
-      <header className="border-b border-ink-900/10 bg-cream-50/80 backdrop-blur sticky top-0 z-30">
+      <header className="border-b border-ink-900/10 bg-cream-50/80 backdrop-blur-sm sticky top-0 z-30">
         <div className="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-4">
           <NavLink to="/" aria-label="Home">
             <Brand />

@@ -42,7 +42,7 @@ export const MatchReveal: React.FC<{ match: CampaignMatch; highlight?: boolean }
         <span className="font-score font-bold text-xl text-ink-900 tabular-nums">
           {match.gf} – {match.ga}
         </span>
-        <span className={`grid place-items-center w-6 h-6 rounded text-sm font-bold ${cls}`}>{mark}</span>
+        <span className={`grid place-items-center w-6 h-6 rounded-sm text-sm font-bold ${cls}`}>{mark}</span>
       </div>
 
       {match.pens && (

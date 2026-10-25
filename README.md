@@ -71,6 +71,9 @@ separate. Security updates run independently when GitHub detects a vulnerable
 dependency. Run the existing type-check, tests and production build before
 accepting updates. Site deployment remains a separate `npm run deploy` step.
 
+Tailwind CSS 4 requires Safari 16.4+, Chrome 111+ or Firefox 128+. Its theme and
+compatibility styles are maintained in `index.css`.
+
 ## Concept (from 7a0)
 
 | 7a0 (original)                              | 7A0 · Süper Lig (this project)                       |
