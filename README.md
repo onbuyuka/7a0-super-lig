@@ -11,8 +11,8 @@ to build **“Your team”** (a mix of 11) → **simulate** a 7-game run (group 
 
 ## Status
 
-- **Phase 1 — Fundamentals (done):** scaffold, domain model, a match engine ported 1:1 from
-  7a0, and the full set-up → roll/build → game-by-game run loop.
+- **Phase 1 — Fundamentals (done):** scaffold, domain model, an independently written match
+  engine using 7a0's game rules, and the full set-up → roll/build → game-by-game run loop.
 - **Phase 2 — Data (done):** real Süper Lig squads & ratings (2015–2026) scraped from
   [sofifa.com](https://sofifa.com) into `data/players.generated.json`. The game rolls only the
   (club, year) squads that actually exist; a deterministic sample generator covers any gaps.
@@ -86,7 +86,7 @@ corporate caches cannot make Dependabot depend on inaccessible feeds.
 | Pick players who were actually there        | Take **one player per club** → “Your team” mix of 11 |
 | Simulate a 7-game run, win **7–0**          | Simulate a 7-game run (group → final), win **7–0**   |
 
-## Simulation (ported from 7a0)
+## Simulation (independent implementation of 7a0's rules)
 
 - **Box score:** `attack`/`defense` are position-weighted averages of the XI; `overall` is the
   mean of the eleven ratings.
@@ -95,3 +95,12 @@ corporate caches cannot make Dependabot depend on inaccessible feeds.
   final (91). Top two of the group advance; level knockouts go to penalties.
 - **7–0** = win all seven. *Record crusher* (goal-difference ≥ 18) and *The wall* (no goals
   conceded) are bonus badges.
+
+## License
+
+The original code and documentation in this repository are licensed under the
+[MIT License](LICENSE).
+
+Third-party code, dependencies, data, images, and other content retain their own
+licenses and terms and are not covered by this license. No trademark rights are
+granted.

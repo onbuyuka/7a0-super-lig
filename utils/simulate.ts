@@ -1,7 +1,7 @@
 import type { MatchScore, Rng } from '@/types';
 
 // ---------------------------------------------------------------------------
-// Match simulation, ported 1:1 from 7a0 — Sete a Zero.
+// Independently implemented match simulation using 7a0's game rules.
 //
 // Goals are Poisson-distributed with a per-side mean (lambda) derived from the
 // attacking side's attack vs the defending side's defence:
